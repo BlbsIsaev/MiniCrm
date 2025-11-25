@@ -94,3 +94,11 @@ response = requests.post("http://localhost:8000/contacts/", json={
     "phone": "+79990001122",
     "message_text": "Здравствуйте, хочу узнать о услугах"
 })
+```
+
+####Для запуска
+- python3 -m venv venv
+- source venv/bin/activate
+- cd app
+- pip install -r requirements.txt
+- uvicorn main:app --port 8000 --host 127.0.0.1
